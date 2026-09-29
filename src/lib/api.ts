@@ -74,6 +74,10 @@ export function fetchProducts() {
   return STATIC ? staticGet<any>('products') : liveGet<any>('/products');
 }
 
+export function fetchLineage() {
+  return STATIC ? staticGet<any>('lineage') : liveGet<any>('/lineage');
+}
+
 export function fetchLeaderboard() {
   return STATIC ? staticGet<any>('leaderboard') : liveGet<any>('/leaderboard');
 }
