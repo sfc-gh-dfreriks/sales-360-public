@@ -2,8 +2,8 @@
 
 A static, no-login public build of the SAP BDC Sales 360 dashboard, deployed to
 GitHub Pages. Dashboards render from a **point-in-time data snapshot** (no Snowflake
-connection, no credentials in the browser). The optional "Cortex Agent" chat page calls
-a separate serverless agent when configured.
+connection, no credentials in the browser). The site opens on the Dashboard, with Ask
+Cortex directly beneath it in the menu.
 
 ## How it works
 
@@ -23,9 +23,8 @@ a separate serverless agent when configured.
   # from the sales_360_react monorepo, with the server running:
   EXPORT_BASE=http://localhost:3003 node scripts/export-static.mjs
   ```
-- **Live agent (optional):** set the repo variable `AGENT_URL` to a deployed Cortex
-  agent Worker URL. If unset, the Chat page shows a "not available" notice but the
-  dashboards work fully.
+- **No Chat page:** the former "Ask the Agent" chat page was removed because it
+  duplicated Ask Cortex.
 
 ## Local build
 
