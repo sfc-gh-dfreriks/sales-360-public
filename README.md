@@ -2,8 +2,8 @@
 
 A static, no-login public build of the SAP BDC Sales 360 dashboard, deployed to
 GitHub Pages. Dashboards render from a **point-in-time data snapshot** (no Snowflake
-connection, no credentials in the browser). The site opens on the Dashboard, with Ask
-Cortex directly beneath it in the menu.
+connection, no credentials in the browser). The site opens on the Executive Dashboard,
+second in the menu directly beneath Ask Cortex.
 
 ## How it works
 
